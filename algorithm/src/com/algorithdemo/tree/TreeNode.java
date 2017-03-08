@@ -2,13 +2,40 @@ package com.algorithdemo.tree;
 
 import java.util.Stack;
 
-public class Node {
+public class TreeNode {
 	
-	public int value;
-	public Node left;
-	public Node right;
+	/**当前节点的值*/
+	private int value;
+	/**左子树*/
+	private TreeNode left;
+	/**右子树*/
+	private TreeNode right;
 	
-	public Node(int data){
+	public int getValue() {
+		return value;
+	}
+
+	public void setValue(int value) {
+		this.value = value;
+	}
+
+	public TreeNode getLeft() {
+		return left;
+	}
+
+	public void setLeft(TreeNode left) {
+		this.left = left;
+	}
+
+	public TreeNode getRight() {
+		return right;
+	}
+
+	public void setRight(TreeNode right) {
+		this.right = right;
+	}
+
+	public TreeNode(int data){
 		this.value = data;
 	}
 	
@@ -16,7 +43,7 @@ public class Node {
 	 * 递归 前序遍历
 	 * @param head
 	 */
-	public void preOrderRecur(Node head){
+	public static void preOrderRecur(TreeNode head){
 		if(head==null){
 			return;
 		}
@@ -26,10 +53,10 @@ public class Node {
 	}
 	
 	/**
-	 * 中序遍历 
+	 * 递归中序遍历 
 	 * @param head
 	 */
-	public void inOrderRecur(Node head){
+	public static void inOrderRecur(TreeNode head){
 		if(head==null){
 			return;
 		}
@@ -38,7 +65,11 @@ public class Node {
 		inOrderRecur(head.right);
 	}
 
-	public void posOrderRecur(Node head){
+	/***
+	 * 递归 后序遍历
+	 * @param head
+	 */
+	public static void posOrderRecur(TreeNode head){
 		if(head == null){
 			return;
 		}
@@ -47,25 +78,14 @@ public class Node {
 		System.out.print(head.value + " ");
 	}
 	
-	public static void main(String[] args) {
-		Node tree = new Node(1);
-		Node lt = new Node(2);
-		Node rt = new Node(3);
-		tree.left=lt;
-		tree.right=rt;
-//		tree.inOrderRecur(tree);
-//		tree.preOrderRecur(tree);
-		tree.inOrderUnRecur(tree);
-	}
-	
 	/**
 	 * 前序遍历 非递归
 	 * @param head
 	 */
-	public void preOrderUnRecur(Node head){
+	public static void preOrderUnRecur(TreeNode head){
 		System.out.println("pre-order");
 		if(head!=null){
-			Stack<Node> stack = new Stack<Node>();
+			Stack<TreeNode> stack = new Stack<TreeNode>();
 			stack.add(head);
 			while(!stack.isEmpty()){
 				head = stack.pop();
@@ -80,11 +100,14 @@ public class Node {
 		}
 	}
 	
-	
-	public void inOrderUnRecur(Node head){
+	/**
+	 * 中序遍历 非递归
+	 * @param head
+	 */
+	public static void inOrderUnRecur(TreeNode head){
 		System.out.println("in-order :");
 		if(head != null){
-		  Stack<Node> stack = new Stack<Node>();
+		  Stack<TreeNode> stack = new Stack<TreeNode>();
 		  while(!stack.isEmpty() || head!=null ){
 			  if(head!=null){
 				  stack.push(head);
@@ -98,12 +121,16 @@ public class Node {
 		}
 	}
 	
-	public void posOrderUnRecur(Node head){
+	/**
+	 * 后序遍历 非递归
+	 * @param head
+	 */
+	public static void posOrderUnRecur(TreeNode head){
 		System.out.println("pos-order:");
 		if(head!=null){
-			Stack<Node> stack = new Stack<Node>();
+			Stack<TreeNode> stack = new Stack<TreeNode>();
 			stack.push(head);
-			Node c = null;
+			TreeNode c = null;
 			while(!stack.isEmpty()){
 				c= stack.peek();
 				if(c.left!=null && head!=c.left && head!=c.right){
@@ -117,5 +144,17 @@ public class Node {
 				 
 			}
 		}
+	}
+	
+	
+	public static void main(String[] args) {
+		TreeNode tree = new TreeNode(1);
+		TreeNode lt = new TreeNode(2);
+		TreeNode rt = new TreeNode(3);
+		tree.left=lt;
+		tree.right=rt;
+ 		inOrderRecur(tree);
+ 		preOrderRecur(tree);
+		inOrderUnRecur(tree);
 	}
 }
