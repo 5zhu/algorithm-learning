@@ -146,6 +146,23 @@ public class TreeNode {
 		}
 	}
 	
+	/**
+	 * 二叉树的深度
+	 * @param root
+	 * @return
+	 */
+	public static int TreeDepth(TreeNode root) {
+        if(root==null){
+            return 0;
+        }else{
+            int left = 1;
+            int right = 1;
+            left+=TreeDepth(root.left);
+            right+=TreeDepth(root.right);
+            return left>right?left:right;
+        }
+    }
+	
 	
 	public static void main(String[] args) {
 		TreeNode tree = new TreeNode(1);
@@ -156,5 +173,6 @@ public class TreeNode {
  		inOrderRecur(tree);
  		preOrderRecur(tree);
 		inOrderUnRecur(tree);
+		System.out.println(TreeDepth(tree));
 	}
 }
