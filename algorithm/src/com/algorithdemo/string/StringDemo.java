@@ -26,5 +26,11 @@ public class StringDemo {
 		}
 		return true;
 	}
+	
+	public static void main(String[] args) {
+		String s1 = "1234";
+		String s2 = "4321";
+		System.out.println(isDeformate(s1,s2));
+	}
 
 }
