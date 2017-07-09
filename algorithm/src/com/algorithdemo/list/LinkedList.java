@@ -7,9 +7,9 @@ package com.algorithdemo.list;
 class Node {
 	
 	/**节点值*/
-	public int value;
+	private int value;
 	/**下一个节点*/
-	public Node next;
+	private Node next;
 	
 	
 	
@@ -64,6 +64,5 @@ public class LinkedList{
 		Node n3 = new Node(3);
 		n1.setNext(n2);n2.setNext(n3);
 		Node node = LinkedList.reverse(n1);
-		System.out.println(node.value+" "+node.next.value+" " +node.next.next.value);
 	}
 }
