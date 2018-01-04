@@ -4,7 +4,7 @@ package com.algorithdemo.search;
 public class SearchDemo {
     
     /**
-     * 二分法查找 O(log2N)__以2为底
+     * ????????? O(log2N)__??2???
      * @param arr
      * @param key
      * @return
