@@ -17,6 +17,8 @@
 
 ## LintCode 刷题
 
+- [1. A + B 问题](src/com/lintcode/Solution1.java)   [LintCode 1](http://www.lintcode.com/zh-cn/problem/a-b-problem/)
+- [2. 尾部的零](src/com/lintcode/Solution2.java) [LintCode 2](http://www.lintcode.com/zh-cn/problem/trailing-zeros/)
 - [133.最长单词](src/com/lintcode/Solution113.java): [LintCode 133](http://www.lintcode.com/zh-cn/problem/longest-words/)
 - [55.比较字符串](src/com/lintcode/Solution55.java)  [LintCode 55](http://www.lintcode.com/zh-cn/problem/compare-strings/)
 - [40. 用栈实现队列](src/com/lintcode/MyQueue.java): [LintCode 44](http://www.lintcode.com/zh-cn/problem/implement-queue-by-two-stacks/)
