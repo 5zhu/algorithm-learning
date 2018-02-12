@@ -22,3 +22,4 @@
 - [133.最长单词](src/com/lintcode/Solution113.java): [LintCode 133](http://www.lintcode.com/zh-cn/problem/longest-words/)
 - [55.比较字符串](src/com/lintcode/Solution55.java)  [LintCode 55](http://www.lintcode.com/zh-cn/problem/compare-strings/)
 - [40. 用栈实现队列](src/com/lintcode/MyQueue.java): [LintCode 44](http://www.lintcode.com/zh-cn/problem/implement-queue-by-two-stacks/)
+- [80. 中位数](src/com/lintcode/Solution80.java) [LintCode 80](http://www.lintcode.com/zh-cn/problem/median/)
