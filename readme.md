@@ -26,3 +26,4 @@
 - [80. 中位数](src/com/lintcode/Solution80.java) [LintCode 80](http://www.lintcode.com/zh-cn/problem/median/)
 - [133.最长单词](src/com/lintcode/Solution113.java): [LintCode 133](http://www.lintcode.com/zh-cn/problem/longest-words/)
 - [204. 单例](src/com/lintcode/Solution.java) [LintCode 204](http://www.lintcode.com/zh-cn/problem/singleton/)
+- [362. 滑动窗口的最大值](src/com/lintcode/Solution362.java): [LintCode 362](http://www.lintcode.com/zh-cn/problem/sliding-window-maximum/)
