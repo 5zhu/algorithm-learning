@@ -20,6 +20,7 @@
 - [2. 尾部的零](src/com/lintcode/Solution2.java) [LintCode 2](http://www.lintcode.com/zh-cn/problem/trailing-zeros/)
 - [3. 统计数字](src/com/lintcode/Solution3.java)  [LintCode 3](http://www.lintcode.com/zh-cn/problem/digit-counts/)
 - [5. 第k大元素](src/com/lintcode/Solution5.java)  [LintCode 5](http://www.lintcode.com/zh-cn/problem/kth-largest-element/)
+- [9. Fizz Buzz 问题](src/com/lintcode/Solution9.java) [LintCode 9](http://www.lintcode.com/zh-cn/problem/fizz-buzz/)
 - [40. 用栈实现队列](src/com/lintcode/MyQueue.java): [LintCode 40](http://www.lintcode.com/zh-cn/problem/implement-queue-by-two-stacks/)
 - [49. 字符大小写排序](src/com/lintcode/Solution49.java) :[LintCode 49](http://www.lintcode.com/zh-cn/problem/sort-letters-by-case/)
 - [55.比较字符串](src/com/lintcode/Solution55.java)  [LintCode 55](http://www.lintcode.com/zh-cn/problem/compare-strings/)
