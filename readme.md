@@ -22,6 +22,7 @@
 - [5. 第k大元素](src/com/lintcode/Solution5.java)  [LintCode 5](http://www.lintcode.com/zh-cn/problem/kth-largest-element/)
 - [9. Fizz Buzz 问题](src/com/lintcode/Solution9.java) [LintCode 9](http://www.lintcode.com/zh-cn/problem/fizz-buzz/)
 - [12. 带最小值操作的栈](src/com/lintcode/MinStack) [LintCode 12](http://www.lintcode.com/zh-cn/problem/min-stack/)
+- [14. 二分查找](src/com/lintcode/Solution14.java)[LintCode 14](http://www.lintcode.com/zh-cn/problem/first-position-of-target/)
 - [40. 用栈实现队列](src/com/lintcode/MyQueue.java): [LintCode 40](http://www.lintcode.com/zh-cn/problem/implement-queue-by-two-stacks/)
 - [49. 字符大小写排序](src/com/lintcode/Solution49.java) :[LintCode 49](http://www.lintcode.com/zh-cn/problem/sort-letters-by-case/)
 - [55.比较字符串](src/com/lintcode/Solution55.java)  [LintCode 55](http://www.lintcode.com/zh-cn/problem/compare-strings/)
